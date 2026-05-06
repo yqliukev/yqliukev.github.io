@@ -65,7 +65,7 @@ export const contactLinks: ContactLink[] = [
 ];
 
 export const introduction =
-  "I like shipping interfaces that are quiet but deliberate. My background spans backend systems, data engineering, and front-end work in energy, finance, and internal tools, so I tend to think in workflows rather than isolated screens.";
+  "I like working on problems that bother me in my everyday life. Currently interested in using AI to automate my life and producing related research. My background spans backend systems, data engineering, and fullstack work in energy, finance, and internal tools, so I tend to think extensively about the bigger picture.";
 
 export const experience: ExperienceItem[] = [
   {

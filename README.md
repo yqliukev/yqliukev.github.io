@@ -31,8 +31,3 @@ A modern, minimal, and fully responsive personal portfolio website built with Ne
    npm run dev
    ```
    Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
-
-## Content Notes
-
-- Site content is driven from [src/content/site.ts](src/content/site.ts).
-- The portrait asset is a local SVG placeholder in [public/avatar-placeholder.svg](public/avatar-placeholder.svg).
