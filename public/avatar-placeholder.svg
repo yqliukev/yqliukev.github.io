@@ -1,0 +1,19 @@
+<svg width="960" height="1200" viewBox="0 0 960 1200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Portrait placeholder</title>
+  <desc id="desc">Minimal illustrated placeholder for a profile portrait.</desc>
+  <rect width="960" height="1200" rx="72" fill="#F4EADF"/>
+  <rect x="54" y="54" width="852" height="1092" rx="58" fill="url(#paint0_linear)" stroke="#C7A98D" stroke-opacity="0.45"/>
+  <circle cx="480" cy="445" r="176" fill="#937055" fill-opacity="0.14"/>
+  <circle cx="480" cy="424" r="118" fill="#937055" fill-opacity="0.28"/>
+  <path d="M346 760c0-74 60-134 134-134h0c74 0 134 60 134 134v58H346v-58Z" fill="#937055" fill-opacity="0.32"/>
+  <rect x="254" y="866" width="452" height="20" rx="10" fill="#937055" fill-opacity="0.24"/>
+  <rect x="303" y="904" width="354" height="14" rx="7" fill="#937055" fill-opacity="0.18"/>
+  <text x="480" y="470" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="148" font-weight="700" fill="#6F4F3A">YK</text>
+  <text x="480" y="1010" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="34" font-weight="600" letter-spacing="8" fill="#6F4F3A" fill-opacity="0.7">PROFILE PLACEHOLDER</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="101" y1="111" x2="843" y2="1089" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8F1"/>
+      <stop offset="1" stop-color="#EDDDCF"/>
+    </linearGradient>
+  </defs>
+</svg>
