@@ -6,7 +6,7 @@ import { ArrowUpRight, Mail, MapPin, PhoneCall } from "lucide-react";
 import { contactLinks, experience, introduction, profile, skillBadges } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: "Overview",
+  title: "Kevin Liu",
   description:
     "Overview of YunQi (Kevin) Liu's experience, contact details, and skills.",
 };
@@ -15,15 +15,17 @@ export default function Home() {
   return (
     <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col gap-16 px-6 pb-20 pt-10 sm:px-10 lg:px-14 xl:px-20">
       <section className="grid gap-10 lg:grid-cols-[minmax(230px,280px)_1fr] lg:items-end lg:gap-12">
-        <div className="flex items-end justify-start">
+        <div className="hidden items-end justify-start lg:flex">
           <div className="relative h-[20rem] w-full max-w-[18rem] overflow-hidden rounded-[2rem] border border-border bg-surface shadow-[0_20px_60px_rgba(84,58,39,0.12)]">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_25%,rgba(147,112,85,0.22),transparent_28%),radial-gradient(circle_at_70%_75%,rgba(147,112,85,0.18),transparent_32%),linear-gradient(180deg,rgba(255,255,255,0.8),rgba(236,223,211,0.88))]" />
             <Image
-              src="/avatar-placeholder.svg"
-              alt="Portrait placeholder for YunQi Kevin Liu"
+              src="/profile_head.jpg"
+              alt="Portrait of YunQi Kevin Liu"
               width={960}
               height={1200}
+              sizes="280px"
               priority
+              unoptimized
               className="relative h-full w-full object-cover"
             />
           </div>
@@ -31,14 +33,14 @@ export default function Home() {
 
         <div className="space-y-6">
           <div className="space-y-2">
-            <p className="text-[0.68rem] uppercase tracking-[0.4em] text-muted">
-              Overview
-            </p>
             <h1 className="max-w-3xl text-balance text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-              {profile.name}
+              Hi, I'm YunQi
             </h1>
+            <p className="text-[1.5rem] tracking-wider">
+              Call me Kevin.
+            </p>
             <p className="max-w-2xl text-balance text-[0.92rem] leading-7 text-muted sm:text-[1rem]">
-              {profile.title}. {profile.summary}
+              {profile.summary}
             </p>
           </div>
 
@@ -47,10 +49,10 @@ export default function Home() {
               Toronto based
             </span>
             <span className="rounded-full border border-border bg-surface px-4 py-2">
-              Open to product-minded roles
+              Playing with AI
             </span>
             <span className="rounded-full border border-border bg-surface px-4 py-2">
-              Static export ready
+              Solving everyday problems
             </span>
           </div>
         </div>
@@ -92,7 +94,6 @@ export default function Home() {
                   </div>
                   <p className="text-[0.9rem] text-foreground">{contact.value}</p>
                 </div>
-                <ArrowUpRight className="h-4 w-4 text-muted transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
               </a>
             );
           })}
@@ -105,7 +106,7 @@ export default function Home() {
             Introduction
           </p>
           <h2 className="text-lg font-medium tracking-tight text-foreground">
-            Short introduction
+            A bit about me
           </h2>
         </div>
 
@@ -175,13 +176,9 @@ export default function Home() {
               Skills
             </p>
             <h2 className="text-lg font-medium tracking-tight text-foreground">
-              Languages and stack logos only
+              Languages and stacks
             </h2>
           </div>
-
-          <p className="max-w-2xl text-[0.82rem] leading-7 text-muted">
-            The footer stays visual and compact: only shield badges, no unverified skill chips.
-          </p>
         </div>
 
         <div className="mt-5 flex flex-wrap gap-2">

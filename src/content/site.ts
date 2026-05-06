@@ -42,14 +42,13 @@ export type DashboardCard = {
 
 export const profile = {
   name: "YunQi (Kevin) Liu",
-  title: "Backend developer and data engineer",
   location: "Toronto, ON",
   email: "yqliukev@gmail.com",
-  phone: "437.995.3877",
+  phone: "+1 (437) 995-3877",
   linkedin: "https://www.linkedin.com/in/yqliukev/",
   github: "https://github.com/yqliukev",
   summary:
-    "I build careful, readable systems that sit close to the product: admin tooling, data pipelines, dashboards, and the interfaces that connect them.",
+    "I build solutions that solve problems with data, AI, and automation, working in a wide range of technologies and industries. Recently graduating from the University of Waterloo, I have experience managing projects in both fast paced and structured environments.",
 };
 
 export const navigation: NavigationItem[] = [
@@ -61,8 +60,8 @@ export const navigation: NavigationItem[] = [
 export const contactLinks: ContactLink[] = [
   { label: "Email", value: profile.email, href: `mailto:${profile.email}` },
   { label: "Phone", value: profile.phone, href: `tel:${profile.phone.replace(/\D/g, "")}` },
-  { label: "LinkedIn", value: "/in/yqliukev", href: profile.linkedin },
-  { label: "GitHub", value: "/yqliukev", href: profile.github },
+  { label: "LinkedIn", value: "yqliukev", href: profile.linkedin },
+  { label: "GitHub", value: "yqliukev", href: profile.github },
 ];
 
 export const introduction =
@@ -117,7 +116,7 @@ export const experience: ExperienceItem[] = [
       "Automated SQL retrieval and VBA formatting to free up roughly half of the daily manual workload.",
     ],
   },
-  {
+  /*{
     role: "Front-end Developer",
     company: "Bicdroid Inc.",
     location: "Waterloo, ON",
@@ -128,7 +127,7 @@ export const experience: ExperienceItem[] = [
       "Worked with Vue and MySQL to resolve product issues and improve the customer-facing interface.",
       "Built Pytest and ROBOT test flows with 100% code coverage across 10 unique scenarios.",
     ],
-  },
+  }, */
 ];
 
 export const projects: ProjectCard[] = [

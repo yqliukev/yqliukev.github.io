@@ -13,12 +13,9 @@ export function SiteHeader() {
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-6 py-5 sm:px-10 lg:px-14 xl:px-20">
         <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <div className="space-y-1">
-            <p className="text-[0.64rem] uppercase tracking-[0.35em] text-muted">
-              {profile.location}
-            </p>
             <Link
               href="/"
-              className="inline-flex items-center gap-2 text-sm font-medium tracking-[0.22em] text-foreground transition-colors hover:text-accent"
+              className="inline-flex items-center gap-4 text-lg font-medium tracking-[0.12em] text-foreground transition-colors hover:text-accent"
             >
               <span className="h-2.5 w-2.5 rounded-full bg-accent" aria-hidden="true" />
               YunQi Liu
@@ -47,10 +44,6 @@ export function SiteHeader() {
             })}
           </nav>
         </div>
-
-        <p className="max-w-2xl text-[0.72rem] leading-6 text-muted">
-          Minimal portfolio scaffold focused on readability, enough structure to feel intentional, and no extra chrome.
-        </p>
       </div>
     </header>
   );
