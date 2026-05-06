@@ -11,16 +11,13 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col gap-12 px-6 pb-20 pt-10 sm:px-10 lg:px-14 xl:px-20">
+    <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col gap-10 px-6 pb-20 pt-10 sm:px-10 lg:px-14 xl:px-20">
       <section className="max-w-3xl space-y-4">
-        <p className="text-[0.68rem] uppercase tracking-[0.4em] text-muted">
-          Projects
-        </p>
         <h1 className="text-balance text-4xl font-semibold tracking-tight sm:text-5xl">
-          Placeholder cards for GitHub projects.
+          My Projects
         </h1>
         <p className="max-w-2xl text-[0.95rem] leading-8 text-muted">
-          These cards are intentionally lightweight and ready to point at real repository URLs when you want to expand the portfolio.
+          Planning on decorating this page a bit more, lightweight for now for a quick launch.
         </p>
       </section>
 
@@ -68,7 +65,7 @@ export default function ProjectsPage() {
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 text-[0.78rem] tracking-[0.22em] text-foreground transition-colors hover:text-accent"
               >
-                Browse repo placeholder
+                Browse repo
                 <span aria-hidden="true">↗</span>
               </Link>
             </div>

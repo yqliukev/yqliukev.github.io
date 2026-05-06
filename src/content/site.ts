@@ -137,7 +137,7 @@ export const projects: ProjectCard[] = [
     description:
       "A compact transformer-based image classifier trained on MNIST, highlighted as a clean proof of concept.",
     stack: ["Python", "PyTorch", "Google Colab"],
-    href: profile.github,
+    href: profile.github.concat("/vision-transformer"),
   },
   {
     title: "VGG11 Image Classifier",
@@ -145,15 +145,15 @@ export const projects: ProjectCard[] = [
     description:
       "A CNN image classification study based on the VGG11 architecture and MNIST data.",
     stack: ["Python", "TensorFlow", "Google Colab"],
-    href: profile.github,
+    href: profile.github.concat("/vgg11"),
   },
   {
     title: "Personal Website",
     label: "Portfolio build",
     description:
-      "The website scaffold itself, ready to expand into a fuller GitHub-connected portfolio.",
+      "This website! Built to be a clean and simple way to share my work and story.",
     stack: ["Next.js", "TypeScript", "Tailwind"],
-    href: profile.github,
+    href: profile.github.concat("/yqliukev.github.io"),
   },
   {
     title: "Bloomberg Global Trading Challenge",
@@ -161,7 +161,7 @@ export const projects: ProjectCard[] = [
     description:
       "A market-monitoring and portfolio management project that reached a 12.6% return.",
     stack: ["Bloomberg Terminal", "Research", "Portfolio analysis"],
-    href: profile.github,
+    href: profile.github.concat("/Bloomberg2023"),
   },
   {
     title: "Fraudulent Transaction ML Algorithm",
@@ -169,16 +169,16 @@ export const projects: ProjectCard[] = [
     description:
       "A k-nearest-neighbors model built to flag suspicious bank transactions.",
     stack: ["Python", "scikit-learn", "Data analysis"],
-    href: profile.github,
+    href: profile.github.concat("/Scotiabnk-Data-Science"),
   },
-  {
+  /*{
     title: "Chess Coding Project",
     label: "Systems project",
     description:
       "A C++ chess engine experiment that connected a computer player model written in R.",
     stack: ["C++", "R", "Rcpp"],
     href: profile.github,
-  },
+  },*/
 ];
 
 export const dashboardCards: DashboardCard[] = [
