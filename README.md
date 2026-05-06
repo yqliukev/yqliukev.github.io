@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# YunQi (Kevin) Liu - Personal Portfolio
 
-## Getting Started
+A modern, minimal, and fully responsive personal portfolio website built with Next.js, React, TypeScript, and Tailwind CSS. The portfolio showcases my work experience, projects, skills, and contact information.
 
-First, run the development server:
+## Tech Stack
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS (v4)
+- **Icons:** Lucide React
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Setup & Local Development
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Clone the repository:**
+   ```bash
+   git clone <your-repo-url>
+   cd personal-dashboard
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-## Learn More
+## Editing Content
 
-To learn more about Next.js, take a look at the following resources:
+The content of the website is organized into separate component files within the `src/components` directory. To update your information, simply edit the corresponding file:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Header / Navigation:** `src/components/Header.tsx`
+- **Hero Section:** `src/components/Hero.tsx`
+- **About Me:** `src/components/About.tsx`
+- **Work Experience:** `src/components/Work.tsx` - edit the `experiences` array.
+- **Projects:** `src/components/Projects.tsx` - edit the `projects` array.
+- **Contact Info:** `src/components/Contact.tsx`
+- **Skills & Footer:** `src/components/SkillsFooter.tsx` - edit the `skills` array to update the badges.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Build and Deploy (GitHub Pages)
 
-## Deploy on Vercel
+The project is configured to be deployed as a static site. The `next.config.ts` includes `output: 'export'` which creates a static build in the `out` directory.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Build the static site:**
+   ```bash
+   npm run build
+   ```
+   This will generate an `out` folder containing all the static HTML/CSS/JS files.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. **Deploying to GitHub Pages:**
+   To deploy to GitHub Pages, you can use a GitHub Actions workflow. Create a file at `.github/workflows/deploy.yml` with a Next.js static deployment configuration, or simply push the `out` directory to the `gh-pages` branch of your repository.
