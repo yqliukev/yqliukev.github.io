@@ -31,3 +31,14 @@ A modern, minimal, and fully responsive personal portfolio website built with Ne
    npm run dev
    ```
    Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+
+## Publishing to GitHub Pages
+
+This repository is configured as a static export, so GitHub Actions can deploy the generated `out/` folder directly to GitHub Pages.
+
+1. In the repository settings, open **Pages** and set **Source** to **GitHub Actions**.
+2. Push changes to the `main` branch.
+3. The workflow runs `npm ci`, builds the site with `npm run build`, and publishes the static export to Pages.
+4. For this repository name (`yqliukev.github.io`), the site is published at the root URL for the GitHub Pages account site.
+
+If you turn this into a project page later, the existing `basePath` logic in `next.config.ts` will automatically prefix asset and route paths with the repository name.
