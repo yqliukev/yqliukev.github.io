@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 
 import { navigation } from "@/content/site";
 
+// Weird pathname shenanigans when deploying
 function normalizePath(pathname: string) {
   if (pathname === "/") {
     return pathname;
@@ -32,7 +33,7 @@ export function SiteHeader() {
 
           <nav aria-label="Primary" className="flex flex-wrap gap-2">
             {navigation.map((item) => {
-              const isActive = pathname === item.href;
+              const isActive = normalizePath(pathname) === normalizePath(item.href);
 
               return (
                 <Link
@@ -46,7 +47,7 @@ export function SiteHeader() {
                       : "border-border bg-surface/80 text-muted hover:border-accent/40 hover:text-foreground",
                   ].join(" ")}
                 >
-                  {item.label}{pathname}
+                  {item.label}
                 </Link>
               );
             })}
