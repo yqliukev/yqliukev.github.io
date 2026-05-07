@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 
-import { dashboardCards } from "@/content/site";
-
 export const metadata: Metadata = {
   title: "Dashboard",
   description:

@@ -169,7 +169,7 @@ export const projects: ProjectCard[] = [
     description:
       "A k-nearest-neighbors model built to flag suspicious bank transactions.",
     stack: ["Python", "scikit-learn", "Data analysis"],
-    href: profile.github.concat("/Scotiabnk-Data-Science"),
+    href: profile.github.concat("/Scotiabank-Data-Science"),
   },
   /*{
     title: "Chess Coding Project",

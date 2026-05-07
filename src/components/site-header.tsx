@@ -3,7 +3,15 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { navigation, profile } from "@/content/site";
+import { navigation } from "@/content/site";
+
+function normalizePath(pathname: string) {
+  if (pathname === "/") {
+    return pathname;
+  }
+
+  return pathname.replace(/\/$/, "");
+}
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -38,7 +46,7 @@ export function SiteHeader() {
                       : "border-border bg-surface/80 text-muted hover:border-accent/40 hover:text-foreground",
                   ].join(" ")}
                 >
-                  {item.label}
+                  {item.label}{pathname}
                 </Link>
               );
             })}
