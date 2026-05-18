@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col gap-16 px-6 pb-20 pt-10 sm:px-10 lg:px-14 xl:px-30">
+    <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col gap-10 px-6 pb-20 pt-10 sm:px-10 lg:px-14 xl:px-30">
       <section className="grid gap-10 lg:grid-cols-[minmax(230px,280px)_1fr] lg:items-end lg:gap-12">
         <div className="hidden items-end justify-start lg:flex">
           <div className="relative h-[20rem] w-full max-w-[18rem] overflow-hidden rounded-[2rem] border border-border bg-surface shadow-[0_20px_60px_rgba(84,58,39,0.12)]">
@@ -68,7 +68,7 @@ export default function Home() {
           </h2>
         </div>
 
-        <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="grid gap-3 grid-cols-2">
           {contactLinks.map((contact) => {
             const icon =
               contact.label === "Email"
